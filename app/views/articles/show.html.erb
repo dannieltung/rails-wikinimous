@@ -1,0 +1,11 @@
+<p>
+  <%= button_to 'delete this article', article_path, method: :delete, data: { confirm: "Delete #{@article.title} ?" } %>
+</p>
+<h1><%= @article.title %></h1>
+<p><%= @article.content %></p>
+<p>
+  <%= button_to 'Edit this article', edit_article_path, method: :get %>
+</p>
+<p>
+  <%= button_to 'Back to list', articles_path, method: :get %>
+</p>
